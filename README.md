@@ -10,13 +10,7 @@
 
 A tox plugin that speeds up tox a little.
 
-Installation
-------------
-
 For installation instructions see [INSTALL.md](https://github.com/hypothesis/tox-faster/blob/main/INSTALL.md).
-
-Hacking
--------
 
 For how to set up a tox-faster development environment see
 [HACKING.md](https://github.com/hypothesis/tox-faster/blob/main/HACKING.md).
