@@ -4,5 +4,5 @@ hookimpl = pluggy.HookimplMarker("tox")
 
 
 @hookimpl
-def tox_runenvreport(_venv, _action):
+def tox_runenvreport(venv, action):  # pylint:disable=unused-argument
     return []
