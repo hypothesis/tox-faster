@@ -1,7 +1,7 @@
 {
   "template": "https://github.com/hypothesis/cookiecutters",
   "directory": "pypackage",
-  "dont_update": ["INSTALL.md"],
+  "ignore": ["INSTALL.md"],
   "extra_context": {
     "name": "tox-faster",
     "package_name": "tox_faster",
@@ -11,6 +11,7 @@
     "github_owner": "hypothesis",
     "copyright_holder": "Hypothesis",
     "public": "yes",
+    "__console_script": "no",
     "__entry_point": "tox-faster",
     "__github_url": "https://github.com/hypothesis/tox-faster",
     "__pypi_url": "https://pypi.org/project/tox-faster"
