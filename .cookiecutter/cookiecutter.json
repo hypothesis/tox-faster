@@ -11,7 +11,8 @@
     "github_owner": "hypothesis",
     "copyright_holder": "Hypothesis",
     "public": "yes",
-    "__console_script": "no",
+    "console_script": "no",
+    "__dependabot_interval": "monthly",
     "__entry_point": "tox-faster",
     "__github_url": "https://github.com/hypothesis/tox-faster",
     "__pypi_url": "https://pypi.org/project/tox-faster"
