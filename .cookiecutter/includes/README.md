@@ -59,3 +59,8 @@ lint run-test: commands[0] | pylint lms bin
 ...
 ```
 
+**tox-faster doesn't disable the env report on CI.**
+The env report can be useful diagnostic information on CI so if an environment
+variable named `CI` is set to any value then tox-faster won't disable the env report.
+This also enables you to re-enable the env report locally by running
+`CI=yes tox ...`.
