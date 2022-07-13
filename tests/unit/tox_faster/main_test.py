@@ -9,7 +9,7 @@ class TestToxRunEnvReport:
     @pytest.mark.parametrize(
         "environ,expected",
         [
-            # In dev there' no CI envvar and tox-faster disables the envreport.
+            # In dev there's no CI envvar and tox-faster disables the envreport.
             ({}, []),
             # On GitHub Actions CI is set to "true" and tox-faster doesn't disable the envreport.
             ({"CI": "true"}, None),
