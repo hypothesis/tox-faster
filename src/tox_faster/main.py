@@ -1,18 +1,14 @@
-import sys
-from argparse import ArgumentParser
-from importlib.metadata import version
+from os import environ
+
+import pluggy
+
+hookimpl = pluggy.HookimplMarker("tox")
 
 
-def hello_world():
-    return "Hello, world!"
+@hookimpl
+def tox_runenvreport(venv, action):  # pylint:disable=unused-argument
+    # pragma: no cover
+    if "CI" in environ:
+        return None
 
-
-def entry_point():  # pragma: nocover
-    parser = ArgumentParser()
-    parser.add_argument("-v", "--version", action="store_true")
-
-    args = parser.parse_args()
-
-    if args.version:
-        print(version("tox-faster"))
-        sys.exit()
+    return []
