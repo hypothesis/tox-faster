@@ -2,7 +2,7 @@ from unittest.mock import sentinel
 
 import pytest
 
-from tox_faster import main
+from tox_faster import plugin
 
 
 @pytest.mark.parametrize(
@@ -15,6 +15,6 @@ from tox_faster import main
     ],
 )
 def test_tox_runenvreport(mocker, environ, expected):
-    mocker.patch.dict(main.environ, environ)
+    mocker.patch.dict(plugin.environ, environ)
 
-    assert main.tox_runenvreport(sentinel.venv, sentinel.action) == expected
+    assert plugin.tox_runenvreport(sentinel.venv, sentinel.action) == expected

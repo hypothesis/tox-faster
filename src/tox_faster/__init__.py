@@ -1,1 +1,1 @@
-from tox_faster.main import tox_runenvreport
+from tox_faster.plugin import tox_runenvreport
