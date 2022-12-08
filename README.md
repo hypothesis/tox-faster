@@ -72,7 +72,7 @@ Then to set up your development environment:
 
 ```terminal
 git clone https://github.com/hypothesis/tox-faster.git
-cd tox_faster
+cd tox-faster
 make help
 ```
 
