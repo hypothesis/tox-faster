@@ -1,7 +1,10 @@
 {
   "template": "https://github.com/hypothesis/cookiecutters",
   "directory": "pypackage",
-  "ignore": ["src/tox_faster/core.py", "tests/unit/tox_faster/core_test.py"],
+  "ignore": [
+    "src/tox_faster/core.py",
+    "tests/unit/tox_faster/core_test.py"
+  ],
   "extra_context": {
     "name": "tox-faster",
     "package_name": "tox_faster",
@@ -15,6 +18,7 @@
     "dependabot_pip_interval": "monthly",
     "__entry_point": "tox-faster",
     "__github_url": "https://github.com/hypothesis/tox-faster",
-    "__pypi_url": "https://pypi.org/project/tox-faster"
+    "__pypi_url": "https://pypi.org/project/tox-faster",
+    "__copyright_year": "2022"
   }
 }
