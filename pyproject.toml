@@ -2,7 +2,29 @@
 requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
+[project]
+dynamic = ["version"]
+name = "tox-faster"
+description = "A tox plugin that speeds up tox a little."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Intended Audience :: Developers",
+]
+requires-python = ">=3.8"
+dependencies = [
+]
+
+[project.urls]
+Repository = "https://github.com/hypothesis/tox-faster"
+Issues = "https://github.com/hypothesis/tox-faster/issues"
+Changelog = "https://github.com/hypothesis/tox-faster/releases"
+
 [tool.setuptools_scm]
+
+[project.entry-points.tox]
+tox-faster = "tox_faster"
 
 [tool.pytest.ini_options]
 addopts = "-q"
